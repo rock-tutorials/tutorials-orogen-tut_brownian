@@ -1,0 +1,11 @@
+<package>
+  <description brief="Brownian motion for the tutorial's rock">
+  
+  </description>
+  <author>/</author>
+  <license></license>
+  <url>http://</url>
+  <logo>http://</logo>
+
+  <depend package="base/orogen/types" />
+</package>
