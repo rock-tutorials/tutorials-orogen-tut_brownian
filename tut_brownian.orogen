@@ -1,0 +1,25 @@
+name "tut_brownian"
+
+import_types_from "base"
+
+# This task context generates MotionCommand2D that makes the object follow a
+# brownian motion
+#
+# More specifically, the task generates straight movements of a random speed
+# in the [min_speed, max_speed] interval during straight_duration seconds. It
+# then switches to a point-turning motion of a random speed in [-angle, angle]
+# radians per second during turn_duration seconds.
+task_context "Task" do
+   property "straight_duration", "double", 5
+   property "min_speed", "double", 0.5
+   property "max_speed", "double", 1.5
+
+   property "turn_duration", "double", 5
+   property "max_angular_speed", "double", Math::PI/10
+
+   # The generated command
+   output_port "cmd", "/base/MotionCommand2D"
+
+   periodic 0.1
+end
+
