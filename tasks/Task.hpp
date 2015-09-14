@@ -3,6 +3,7 @@
 #ifndef TUT_BROWNIAN_TASK_TASK_HPP
 #define TUT_BROWNIAN_TASK_TASK_HPP
 
+#include <base/Time.hpp>
 #include "tut_brownian/TaskBase.hpp"
 #include <boost/random/linear_congruential.hpp>
 

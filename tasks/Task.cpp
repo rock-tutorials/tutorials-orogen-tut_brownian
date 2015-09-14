@@ -4,6 +4,7 @@
 
 #include <boost/random/uniform_real.hpp>
 #include <boost/random/variate_generator.hpp>
+#include <ctime>
 
 using namespace tut_brownian;
 
@@ -74,7 +75,7 @@ void Task::updateHook()
     TaskBase::updateHook();
 
     double duration;
-    base::MotionCommand2D command;
+    base::commands::Motion2D command;
     if (current_mode == TURN)
     {
         duration = _turn_duration;
