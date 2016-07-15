@@ -18,7 +18,7 @@ task_context "Task" do
    property "max_angular_speed", "double", Math::PI/10
 
    # The generated command
-   output_port "cmd", "/base/MotionCommand2D"
+   output_port "cmd", "/base/commands/Motion2D"
 
    periodic 0.1
 end
